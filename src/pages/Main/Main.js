@@ -1,0 +1,32 @@
+import React from 'react'
+import { Helmet } from 'react-helmet'
+
+import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, Education, Experience, Contacts, Projects, Services } from '../../components'
+import UiProjects from '../../components/UiDesigns/UiProjects'
+import { headerData } from '../../data/headerData'
+
+function Main() {
+    return (
+        <div>
+            <Helmet>
+                <title>{headerData.name} - Porfolio</title>
+            </Helmet>
+
+            <Navbar />        
+            <Landing />
+            <About />
+            <Education />
+            <Skills />
+            <Experience />
+            <Projects />
+            <UiProjects />
+            <Services />
+            {/* <Testimonials /> */}
+            <Blog />
+            <Contacts />
+            <Footer />
+        </div>
+    )
+}
+
+export default Main
